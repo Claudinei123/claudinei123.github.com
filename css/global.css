@@ -1,0 +1,70 @@
+section,
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo-h2 {
+  font-family: "Vidaloka", Times, serif;
+  font-size: 3rem;
+  color: #f0f0f0;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.titulo-h2::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 44px;
+  background: linear-gradient(#beaa47, #dbc86a);
+  left: -20px;
+  top: 6px;
+}
+
+@media (max-width: 600px) {
+  .titulo-h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .titulo-h2::before {
+    height: 36px;
+  }
+}
+
+@media (max-width: 460px) {
+  .titulo-h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .titulo-h2::before {
+    height: 30px;
+    width: 8px;
+    left: -18px;
+    top: 2px;
+  }
+}
